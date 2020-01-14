@@ -1,0 +1,17 @@
+<h1>Submit A New Starship</h1>
+
+<form action="/starships/new" method="post">
+  <label for="name">Ship Name:
+    <input type="text" id="name" name="name" value="<%= @name %>">
+  </label>
+
+  <label for="ship_class">Ship Class:
+    <input type="text" id="ship_class" name="ship_class" value="<%= @ship_class %>">
+  </label>
+
+  <label for="location">Ship Location:
+    <input type="text" id="location" name="location" value="<%= @location %>">
+  </label>
+
+  <input type="Submit" value="Add Ship">
+</form>
